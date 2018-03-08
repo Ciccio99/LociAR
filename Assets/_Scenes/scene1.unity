@@ -195,7 +195,7 @@ Prefab:
     - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
         type: 2}
       propertyPath: drawVisualMeshes
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
         type: 2}
@@ -243,11 +243,6 @@ Prefab:
     - target: {fileID: 4543495872665798, guid: f46f9eddea7bd4d4e813283cdc60cb96, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20398397884145480, guid: f46f9eddea7bd4d4e813283cdc60cb96,
-        type: 2}
-      propertyPath: near clip plane
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f46f9eddea7bd4d4e813283cdc60cb96, type: 2}
@@ -397,6 +392,10 @@ MonoBehaviour:
   - Keyword: eight
     KeyCode: 0
   - Keyword: nine
+    KeyCode: 0
+  - Keyword: done
+    KeyCode: 0
+  - Keyword: continue
     KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!114 &1552390223
@@ -604,6 +603,40 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 994982299}
           m_MethodName: Undo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: done
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 994982299}
+          m_MethodName: Done
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: continue
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 994982299}
+          m_MethodName: Continue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
